@@ -125,6 +125,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
   // Update new recipe data
 };
+
+const newFeature = function () {
+  console.log('Hi this is a new feature, you know?');
+};
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -133,7 +137,7 @@ const init = function () {
   SearchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Wellcome');
+  newFeature();
 };
 
 init();
